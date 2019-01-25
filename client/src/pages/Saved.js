@@ -3,7 +3,7 @@ import Book from "../components/Book"
 import Results from "../components/Results"
 import API from "../utils/API";
 
-class Search extends Component {
+class Saved extends Component {
     state = {
         books: []
     }
@@ -20,12 +20,12 @@ class Search extends Component {
         })
     }
 
-    bookDelete(bookID){
+    bookDelete = (bookID) => {
         API.deleteBook(bookID)
         .then(() => {
             this.setState({
-                books: this.state.books.filter(() => {
-                    return book.bookID !== bookID
+                books: this.state.books.filter(book => {
+                    return book._id !== bookID
                 })
             })
         })
@@ -36,7 +36,7 @@ class Search extends Component {
             <div>
                 <Results label="Saved Books">
                     {this.state.books.map((book, index) => {
-                        return <Book handleClick={this.bookDelete} info={book} key={index} bookID={book._id} />
+                        return <Book handleClick={this.bookDelete} info={book} key={index} bookID={book._id} buttonLabel="Delete" />
                     })}
                 </Results>
             </div>

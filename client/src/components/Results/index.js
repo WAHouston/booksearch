@@ -1,9 +1,11 @@
 import React from "react"
 
-function Results () {
+
+function Results (props) {
     return (
         <div>
-            <h4></h4>
+            <h4>{props.label}</h4>
+            {props.children}
         </div>
     )
 }

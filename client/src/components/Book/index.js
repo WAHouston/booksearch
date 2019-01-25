@@ -1,15 +1,18 @@
 import React from "react"
 
 function Book (props) {
-    let {title, author, image, description, link} = props.info
+    let {title, authors, image, description, link} = props.info
 
     return (
-        <h4>{title}</h4>
-        <button></button>
-        <button></button>
-        <h5>{author}</h5>
-        <img src={image}></img>
-        <p>{description}</p>
-        <a href={link}>{link}</a>
+        <div>
+            <h4>{title}</h4>
+            <a href={link} target="_blank" rel="noopener noreferrer"><button type="button">View</button></a>
+            <button type="button" onClick={() => props.handleClick(props.bookID)}>{props.buttonLabel}</button>
+            <h5>{authors.join(", ")}</h5>
+            <img src={image} alt={title}></img>
+            <p>{description}</p>
+        </div>
     )
 }
+
+export default Book
