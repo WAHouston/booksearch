@@ -1,0 +1,17 @@
+.pageTitle {
+    font-size: 50px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.pageByline {
+    margin-top: 0px;
+}
+
+.pageTitleBlock {
+    width: 960px;
+    border: 2px solid #000000;
+    background: #dddddd;
+    text-align: center;
+    margin:10px auto;
+}

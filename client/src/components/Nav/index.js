@@ -1,17 +1,18 @@
 import React from "react";
+import "./style.css"
 
 function Nav() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a className="navbar-brand" href="/">
+    <nav className="navBox">
+      <a className="googleBooks" href="/">
         Google Books
       </a>
 
-      <a className="navbar-brand" href="/">
+      <a className="searchLink" href="/">
         Search
       </a>
 
-      <a className="navbar-brand" href="/Saved">
+      <a className="savedLink" href="/Saved">
         Saved
       </a>
     </nav>

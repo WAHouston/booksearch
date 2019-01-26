@@ -1,0 +1,10 @@
+.resultsBox {
+    width: 960px;
+    background: #dddddd;
+    border: 2px solid #000000;
+    margin: 10px auto;
+}
+
+.resultsTitle {
+    margin: 5px auto 10px 10px;
+}

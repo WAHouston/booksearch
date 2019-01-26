@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+.searchBox {
+    background: #dddddd;
+    border: 2px solid #000000;
+    width: 960px;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.searchBoxTitle {
+    margin: 5px auto 10px;
+}
+
+.searchForm {
+    margin: auto;
+}
+
+.searchField {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.searchButton {
+    display: block;
+    float: right;
+    background: #00dddd;
+}

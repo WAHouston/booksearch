@@ -1,0 +1,32 @@
+.bookBox {
+    width: 900px;
+    border: 2px solid #000000;
+    background: #ffffff;
+    margin:10px auto;
+    padding: 5px 5px 5px 5px;
+}
+
+.bookTitle {
+    display: inline;
+}
+
+.viewBtn, .variableBtn {
+    float: right;
+    background: #00dddd;
+}
+
+.viewBtn {
+    margin-left: 5px;
+}
+
+.bookAuthors {
+
+}
+
+img {
+    
+}
+
+p {
+    
+}
